@@ -1,0 +1,39 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "nombre": "Migración 1.3",
+      "estimacion": "3"
+    },
+    {
+      "id": 2,
+      "nombre": "Landing Fase 4",
+      "estimacion": "6"
+    },
+    {
+      "id": 3,
+      "nombre": "To Do",
+      "estimacion": "2"
+    },
+    {
+      "id": 5,
+      "nombre": "Reunión cliente",
+      "estimacion": "1"
+    },
+    {
+      "id": 7,
+      "nombre": "Elegir Plataforma",
+      "estimacion": 8
+    },
+    {
+      "nombre": "Francisco",
+      "estimacion": "100",
+      "id": 8
+    },
+    {
+      "nombre": "Francisco 2.0",
+      "estimacion": "3",
+      "id": 9
+    }
+  ]
+}
