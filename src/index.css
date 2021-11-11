@@ -42,3 +42,14 @@ code {
       color: #4AA48A;
 }
 
+/* Listado Tareas */
+.acciones-button-tbody{
+  border: 1px grey solid;
+  background: none;
+  color: grey;
+}
+
+.acciones-button-tbody:hover{
+  color: #4AA48A;
+}
+
