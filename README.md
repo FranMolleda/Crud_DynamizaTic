@@ -10,7 +10,7 @@ My JSON Server - no installation required, use your own data
 
 ## Must run Json Server to use Crud DynamizaTic
 
-### npx json-server --watch db.json --port 4000
+### `npx json-server --watch db.json --port 4000`
 
 
 # Getting Started with Create React App
