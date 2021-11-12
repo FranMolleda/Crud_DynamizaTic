@@ -8,7 +8,9 @@ Egghead.io free video tutorial - Creating demo APIs with json-server
 JSONPlaceholder - Live running version
 My JSON Server - no installation required, use your own data
 
-## Must run Json Server to use Crud DynamizaTic
+## Run start Script
+
+Must run Json Server to use Crud DynamizaTic
 
 ### `npx json-server --watch db.json --port 4000`
 
