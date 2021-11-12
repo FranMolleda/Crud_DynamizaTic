@@ -1,3 +1,18 @@
+# Getting Started with Json Server
+
+Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+
+Created with <3 for front-end developers who need a quick back-end for prototyping and mocking.
+
+Egghead.io free video tutorial - Creating demo APIs with json-server
+JSONPlaceholder - Live running version
+My JSON Server - no installation required, use your own data
+
+## Must run Json Server to use Crud DynamizaTic
+
+### npx json-server --watch db.json --port 4000
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
