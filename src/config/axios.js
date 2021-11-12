@@ -1,7 +1,7 @@
-import axios from "axios"
+import axios from "axios";
 
 const urlAxios = axios.create({
-    baseURL: "http://localhost:3004/"
-})
+  baseURL: "http://localhost:4000/",
+});
 
-export default urlAxios
+export default urlAxios;

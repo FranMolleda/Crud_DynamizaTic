@@ -24,8 +24,12 @@ const Tarea = ({ tarea }) => {
     <tr>
       <td>{nombre}</td>
       <td>{estimacion} días</td>
-      <td className="d-flex justify-content-around">
-        <button type="button" onClick={() => editarTarea(tarea)}>
+      <td className="d-flex justify-content-center">
+        <button
+          className="acciones-button-tbody-editar"
+          type="button"
+          onClick={() => editarTarea(tarea)}
+        >
           Editar
         </button>
         <button
