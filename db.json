@@ -1,0 +1,39 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "nombre": "Migración 1.10.3",
+      "estimacion": "15"
+    },
+    {
+      "id": 2,
+      "nombre": "Landing Fase 4",
+      "estimacion": "6"
+    },
+    {
+      "id": 5,
+      "nombre": "Reunión cliente",
+      "estimacion": "1"
+    },
+    {
+      "id": 7,
+      "nombre": "Elegir Plataforma",
+      "estimacion": "2"
+    },
+    {
+      "id": 8,
+      "nombre": "Elegir Plataforma",
+      "estimacion": "2"
+    },
+    {
+      "nombre": "Configuración MongoDB",
+      "estimacion": "1",
+      "id": 9
+    },
+    {
+      "nombre": "Seleccionar Hosting",
+      "estimacion": "1",
+      "id": 10
+    }
+  ]
+}
