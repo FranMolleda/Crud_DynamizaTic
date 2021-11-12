@@ -10,7 +10,6 @@ import {
   EDITAR_TAREA,
   EDITAR_TAREA_ERROR,
   EDITAR_TAREA_OK,
-  EDICION_TAREA
 } from "../types";
 
 const initialState = {
@@ -18,7 +17,7 @@ const initialState = {
   error: null,
   loading: false,
   tareaeliminar: null,
-  tareaeditar: {}
+  tareaeditar: {},
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -34,7 +33,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         loading: false,
-          tareas: [...state.tareas, action.payload],
+        tareas: [...state.tareas, action.payload],
       };
 
     case AGREGAR_TAREA_ERROR:
@@ -44,43 +43,47 @@ export default function (state = initialState, action) {
       return {
         ...state,
         loading: false,
-          error: action.payload,
+        error: action.payload,
       };
 
     case OBTENER_TAREAS:
       return {
         ...state,
         tareas: action.payload,
-          error: null
-      }
+        error: null,
+      };
 
-      case ELIMINAR_TAREA:
-        return {
-          ...state,
-          tareaeliminar: action.payload
-        }
+    case ELIMINAR_TAREA:
+      return {
+        ...state,
+        tareaeliminar: action.payload,
+      };
 
-        case ELIMINAR_TAREA_OK:
-          return {
-            ...state,
-            tareas: state.tareas.filter(tarea => tarea.id !== state.tareaeliminar),
-              tareaeliminar: null
-          }
+    case ELIMINAR_TAREA_OK:
+      return {
+        ...state,
+        tareas: state.tareas.filter(
+          (tarea) => tarea.id !== state.tareaeliminar
+        ),
+        tareaeliminar: null,
+      };
 
-          case EDITAR_TAREA:
-            return {
-              ...state,
-              tareaeditar: action.payload
-            }
+    case EDITAR_TAREA:
+      return {
+        ...state,
+        tareaeditar: action.payload,
+      };
 
-            case EDITAR_TAREA_OK:
-              return {
-                ...state,
-                tareaeditar: null,
-                  tareas: state.tareas.map(tarea => tarea.id === action.payload.id ? tarea = action.payload : tarea)
-              }
+    case EDITAR_TAREA_OK:
+      return {
+        ...state,
+        tareaeditar: null,
+        tareas: state.tareas.map((tarea) =>
+          tarea.id === action.payload.id ? (tarea = action.payload) : tarea
+        ),
+      };
 
-              default:
-                return state;
+    default:
+      return state;
   }
 }

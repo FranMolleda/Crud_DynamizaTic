@@ -44,9 +44,13 @@ const Tareas = () => {
             </tr>
           </thead>
           <tbody>
-            {tareas.length === 0
-              ? "No hay Tareas"
-              : tareas.map((tarea) => <Tarea key={tarea.id} tarea={tarea} />)}
+            {tareas.length === 0 ? (
+              <tr>
+                <td>No hay Tareas</td>
+              </tr>
+            ) : (
+              tareas.map((tarea) => <Tarea key={tarea.id} tarea={tarea} />)
+            )}
           </tbody>
         </table>
       </div>

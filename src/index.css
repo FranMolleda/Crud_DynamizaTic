@@ -47,9 +47,18 @@ code {
   border: 1px grey solid;
   background: none;
   color: grey;
+  margin-left:1rem
 }
 
 .acciones-button-tbody:hover{
   color: #4AA48A;
+}
+.acciones-button-tbody-editar{
+  border: 1px grey solid;
+  background: none;
+  color: #4AA48A}
+
+.acciones-button-tbody-editar:hover{
+  color: grey;
 }
 
